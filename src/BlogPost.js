@@ -9,6 +9,7 @@ function BlogPost() {
         <div className="blogPost__welcome">
           <h1>Welcome to my blog!</h1>
         </div>
+        <hr />
         <div className="blogPost__top">
           <div className="top">
             <Avatar src="https://lh3.googleusercontent.com/a-/AOh14GigQTiOzvu9lYHriPUA8bxzBjMta-9XRYt7uoxa=s96-c" />
@@ -18,6 +19,7 @@ function BlogPost() {
             <div>April 4th, 2022</div>
           </div>
         </div>
+        <hr />
         <div className="blogPost__middle">
           <div className="middle__title">
             <h1>My First Blog Post</h1>
@@ -63,7 +65,9 @@ function BlogPost() {
             </p>
           </div>
         </div>
-        <div className="blogPost__bottom"></div>
+        <div className="blogPost__bottom">
+          <hr />
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { ref, getDownloadURL, uploadBytes } from "firebase/storage";
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { db, storage } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import PhotoLibraryIcon from "@mui/icons-material/PhotoLibrary";
@@ -12,6 +12,10 @@ function MessageSender() {
   const [input, setInput] = useState("");
   const [imageUrl, setImageUrl] = useState("");
   const [file, setFile] = useState(null);
+  const [isLoading, setIsLoading] = useState(false)
+  const [isColor, setIsColor] = useState("gray")
+  const [isPost, setIsPost] = useState("Post");
+
 
   const postsCollectionRef = collection(db, "posts");
 
@@ -41,9 +45,18 @@ function MessageSender() {
     setInput("");
     setImageUrl("");
     setFile(null);
+    setIsColor("gray")
+    setIsPost("Post")
   };
 
-  const fileUpload = async () => {};
+  const handleButton = () => {
+
+setIsColor("purple");
+
+  };
+  const handlePost = ()=>{
+setIsPost("");
+  }
 
   return (
     <div className="messageSender">
@@ -68,20 +81,20 @@ function MessageSender() {
       </div>
       <div className="messageSender__bottom">
         <div className="messageSender__option">
-          <label className="fileUpload" htmlFor="input">
-            <PhotoLibraryIcon style={{ color: "gray" }} />
+          <label className="fileUpload" htmlFor="input" onClick={handleButton}>
+            <PhotoLibraryIcon style={{ color: isColor }} />
             <input
               type="file"
               id="input"
               onChange={(e) => setFile(e.target.files[0])}
               hidden
             />
-            <h3>Photo/Video</h3>
+            <h3 style={{ color: isColor}}>Photo/Video</h3>
           </label>
         </div>
         <div className="messageSender__option">
           <button type="submit" onClick={handleSubmit}>
-            <h3>Post</h3>
+            <h3 onClick={handlePost}>{isPost}</h3>
           </button>
         </div>
       </div>

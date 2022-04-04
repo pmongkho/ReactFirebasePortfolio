@@ -74,13 +74,24 @@ small > img {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .container__AboutMe{
+        background-color: none;
+        box-shadow: none;
+        padding: 80px 0px;
+        margin:  0px;
+        height: 100%;
+        border-radius: 0;
+    }
+    .AboutMe{
+        height: 100%;
+        margin: 0px ;
+        padding-top: 40px;
+    }
   h1 {
     font-size: 1em;
   }
-  .container__AboutMe {
-    border-radius: 0px;
-    height: calc(100vh - 160px);
-  }
+
 
   .socialicons {
     margin-top: 40px;

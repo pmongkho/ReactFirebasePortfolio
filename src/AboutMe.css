@@ -1,0 +1,123 @@
+.AboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  background-image: linear-gradient(#3f1392, rgb(22, 228, 255));
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.container__AboutMe {
+  margin-top: 80px;
+
+ padding:10px 60px;
+  background: rgba(105, 64, 64, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-radius: 25px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  z-index: 0;
+}
+
+.AboutMeimage {
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  object-fit: cover;
+}
+h1 {
+  font-size: 2em;
+}
+small {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+small > img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  align-items: center;
+  object-fit: contain;
+}
+.socialicons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2em;
+  margin: 20px;
+}
+
+.socialicons a {
+  color: white;
+  text-decoration: none;
+  transition: 500ms;
+  padding: 10px;
+}
+.socialicons a:hover {
+  color: rgb(38, 89, 165);
+  text-decoration: none;
+  transition: 200ms;
+}
+.classname {
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1em;
+  }
+  .container__AboutMe {
+    border-radius: 0px;
+    height: calc(100vh - 160px);
+  }
+
+  .socialicons {
+    margin-top: 40px;
+  }
+  .socialicons a {
+    padding: 0px;
+  }
+  small img {
+    display: none;
+  }
+  small {
+    margin-top: 40px;
+  }
+}
+
+.comments {
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.164);
+  border-radius: 25px;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.download a{
+    text-decoration: none;
+}
+
+.download button {
+  width: 200px;
+  text-transform: none;
+  background-color: #60198a;
+  border: 1px solid #8030af;
+  color: #eff2f5;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+.download button:hover {
+  background-color: #fff;
+  color: #60198a;
+}

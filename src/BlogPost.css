@@ -1,0 +1,42 @@
+.blogPost{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+     margin-top: 100px;
+  padding: 30px 250px;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.blogPost__welcome{
+    font-size: 2rem;
+        padding: 40px 0px;
+}
+.blogPost__top{
+    padding: 40px 0px;
+    display: flex;
+}
+
+.top__info{
+margin-left: 20px;
+}
+
+.middle__title{
+    padding: 40px 0px;
+
+
+}
+.middle__pTitle{
+    padding: 20px 0px;
+
+
+}
+
+.middle__p{
+  padding: 20px 0px;
+}
+.blogPost__bottom{
+    padding: 40px 0px;
+}

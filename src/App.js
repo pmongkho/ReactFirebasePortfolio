@@ -7,6 +7,7 @@ import Feed from "./Feed";
 import { useState } from "react";
 import AboutMe from "./AboutMe";
 import BlogPost from "./BlogPost";
+import BlogPost2 from './BlogPost2'
 
 
 function App() {

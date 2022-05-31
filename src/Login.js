@@ -35,7 +35,7 @@ function Login() {
             src={require("./logo2.png")}
             sx={{ width: 200, height: 200 }}
           />
-        
+
         <Button type="submit" onClick={signInWithGoogle}>Sign In</Button>
       </div>
     </div>

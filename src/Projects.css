@@ -1,75 +1,67 @@
-a{
-
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
 
-.projects{
-    padding: 20px 0px;
+.projects {
+    height: 100vh;
+  padding: 20px 0px;
 
-    justify-content: center;
-    align-items: start;
-    
-    
+  justify-content: center;
+  align-items: start;
 }
-h1{
-    padding: 20px;
-}
-
-.project_card video{
-    height: 300px;
-    width: 300px;
-   
+h1 {
+  padding: 20px;
 }
 
+.project_card video {
+  /* height: 300px;
+  width: 300px; */
+}
 
-.project_card__descr{
- font-size:.4em;
+.project_card__descr {
+  font-size: 0.4em;
 }
 .project_card {
-    background-color: rgba(255, 255, 255, 0.938);
-     border-radius: 10px;
-     margin: 10px;
-     width: 300px;
+  background-color: rgba(255, 255, 255, 0.938);
+  display: flex;
+  margin: 10px;
+}
+.hover-overlay {
+      margin-top: 215%;  
+
+  font-size: 0.25em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+   border-radius: 0px 0px 10px 10px;
 
 }
-.hover-overlay{
-    width: 300px;
-    height: 300px;
-    font-size: .3em;
-    background-color: rgba(0, 0, 0, 0.089);
-    color: rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    
+
+
+.project_card :hover {
+  cursor: pointer;
 }
 
-.project_card :hover{
-   
-    cursor: pointer;
-}
-
-.projects_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.projects_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
-.project_card{
+  .project_card {
     width: 100%;
     border-radius: 0px;
-    margin: 0px;
+    margin-top: 10px;
     background-color: rgba(255, 255, 255, 0);
-}
-.project_card video{
+  }
+  .project_card video {
     width: 100%;
+  }
+  .projects_container {
+    flex-wrap: wrap;
+  }
 }
-.projects_container{
-    display: inline;
-}
-
-}
-

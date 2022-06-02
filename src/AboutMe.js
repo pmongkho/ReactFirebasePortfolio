@@ -50,14 +50,14 @@ function AboutMe() {
             </div>
           </div>
           <div className='download'>
-            <a href='./EddyMongkhonvilayResumeCV.pdf' download>
+            <a href='./MongkhonvilayCV__CS' download>
               <Button fontSize='50' onClick={downloadResume}>
                 Download My Resume
               </Button>
             </a>
           </div>
         </div>
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </div>
   )

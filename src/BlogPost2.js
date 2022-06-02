@@ -17,7 +17,7 @@ function BlogPost2() {
       <hr />
       <div className='blogPost__middle'>
         <div className='middle__title'>
-          <h1>Using python to sort PDF pages</h1>
+          <h1>Using python to sort two pdf files into one.</h1>
         </div>
 
         <h2>Reg Expressions</h2>
@@ -85,7 +85,7 @@ function BlogPost2() {
           <p>This is where a problem occurred.</p>
           <p>
             I solved this problem by switching the key:value pairs in the
-            dictionairies with this code, now it will read 'plan number':'page
+            dictionaries with this code, now it will read 'plan number':'page
             number'.
           </p>
           <p>

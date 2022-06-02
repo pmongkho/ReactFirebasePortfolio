@@ -9,7 +9,7 @@ import { getStorage } from 'firebase/storage';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyABI3xss9OSoN39UTObY84FtXI6hs6udSI",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "portfolio-ef4ca.firebaseapp.com",
   databaseURL: "https://portfolio-ef4ca-default-rtdb.firebaseio.com",
   projectId: "portfolio-ef4ca",

@@ -4,6 +4,7 @@ import project1 from './videos/portfolio-app.mp4'
 import project2 from './videos/google-translate.mp4'
 import project3 from './videos/sudoku-solver.mp4'
 import project4 from './videos/tattoo-app.mp4'
+import project5 from './videos/tetris-app.mp4'
 import { Link } from 'react-router-dom'
 import HoverVideoPlayer from 'react-hover-video-player'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -17,8 +18,7 @@ function Projects() {
       <div className='projects_container'>
         <a
           href='https://github.com/pmongkho/ReactFirebasePortfolio'
-          target='_blank'
-        >
+          target='_blank'>
           <div className='project_card'>
             <HoverVideoPlayer
               videoSrc={project1}
@@ -37,8 +37,7 @@ function Projects() {
 
         <a
           href='https://github.com/pmongkho/GOOGLE-TRANSLATE-REACT-AXIOS-EXPRESS'
-          target='_blank'
-        >
+          target='_blank'>
           <div className='project_card'>
             <HoverVideoPlayer
               style={{ color: 'black' }}
@@ -58,10 +57,7 @@ function Projects() {
           </div>
         </a>
 
-        <a
-          href='https://github.com/pmongkho/GOOGLE-TRANSLATE-REACT-AXIOS-EXPRESS'
-          target='_blank'
-        >
+        <a href='https://github.com/pmongkho/SUDOKU-SOLVER-API' target='_blank'>
           <div className='project_card'>
             <HoverVideoPlayer
               style={{ color: 'black' }}
@@ -71,9 +67,7 @@ function Projects() {
                   <div className=''>
                     <h2>Sudoku Solver App</h2>
                     <p>JS, AXIOS, EXPRESS, API</p>{' '}
-                    <p>
-                      https://github.com/pmongkho/GOOGLE-TRANSLATE-REACT-AXIOS-EXPRESS
-                    </p>
+                    <p>https://github.com/pmongkho/SUDOKU-SOLVER-API</p>
                   </div>
                 </div>
               }
@@ -82,9 +76,8 @@ function Projects() {
         </a>
 
         <a
-          href='https://github.com/pmongkho/GOOGLE-TRANSLATE-REACT-AXIOS-EXPRESS'
-          target='_blank'
-        >
+          href='https://github.com/pmongkho/TATTOO-BOOKING-CONSULT-APP'
+          target='_blank'>
           <div className='project_card'>
             <HoverVideoPlayer
               style={{ color: 'black' }}
@@ -95,8 +88,26 @@ function Projects() {
                     <h2>Tattoo Booking App</h2>
                     <p>REACT</p>{' '}
                     <p>
-                      https://github.com/pmongkho/GOOGLE-TRANSLATE-REACT-AXIOS-EXPRESS
+                      https://github.com/pmongkho/TATTOO-BOOKING-CONSULT-APP
                     </p>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </a>
+
+        <a href='https://github.com/pmongkho/TETRIS-VANILLAJS' target='_blank'>
+          <div className='project_card'>
+            <HoverVideoPlayer
+              style={{ color: 'black' }}
+              videoSrc={project5}
+              hoverOverlay={
+                <div className='hover-overlay'>
+                  <div className=''>
+                    <h2>Tetris App</h2>
+                    <p>Vanilla JS, HTML, CSS</p>{' '}
+                    <p>https://github.com/pmongkho/TETRIS-VANILLAJS</p>
                   </div>
                 </div>
               }

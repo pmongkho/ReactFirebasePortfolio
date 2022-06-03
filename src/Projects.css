@@ -23,7 +23,7 @@ h1 {
   font-size: 0.4em;
 }
 .project_card {
-  background-color: rgba(255, 255, 255, 0.938);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   margin: 10px;
 }
@@ -52,16 +52,25 @@ h1 {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .projects{
+    height: 100%;
+    padding: 0px;
+  }
   .project_card {
     width: 100%;
-    border-radius: 0px;
-    margin-top: 10px;
+    height: auto;
+    /* border-radius: 10px; */
+    margin-top: 75px;
     background-color: rgba(255, 255, 255, 0);
   }
   .project_card video {
     width: 100%;
+    border-radius:10px;
   }
   .projects_container {
     flex-wrap: wrap;
+    margin-bottom: 200px;
+  height: 100%;
   }
 }

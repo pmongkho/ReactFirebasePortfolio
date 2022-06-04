@@ -24,7 +24,7 @@ h1 {
 }
 .project_card {
   background-color: rgba(255, 255, 255, 0);
-  display: flex;
+
   margin: 10px;
 }
 .hover-overlay {
@@ -39,7 +39,17 @@ h1 {
 
 }
 
+.project-card-info{
+  font-size: 0.25em;
+  color: rgb(26, 26, 26);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 80%;
 
+
+}
 
 .project_card :hover {
   cursor: pointer;
@@ -64,6 +74,7 @@ h1 {
     margin-top: 75px;
     background-color: rgba(255, 255, 255, 0);
   }
+
   .project_card video {
     width: 100%;
     border-radius:10px;

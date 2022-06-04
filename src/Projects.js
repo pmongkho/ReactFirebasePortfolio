@@ -5,6 +5,8 @@ import project2 from './videos/google-translate.mp4'
 import project3 from './videos/sudoku-solver.mp4'
 import project4 from './videos/tattoo-app.mp4'
 import project5 from './videos/tetris-app.mp4'
+import project6 from './videos/monday-clone-app.mp4'
+
 import { Link } from 'react-router-dom'
 import HoverVideoPlayer from 'react-hover-video-player'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -26,7 +28,9 @@ function Projects() {
                 <div className='hover-overlay'>
                   <div className=''>
                     <h2>Portfolio App</h2>
+
                     <p>REACT, FIREBASE V9</p>
+
                     <p>https://github.com/pmongkho/ReactFirebasePortfolio</p>
                   </div>
                 </div>
@@ -112,6 +116,23 @@ function Projects() {
                 </div>
               }
             />
+          </div>
+        </a>
+        <a
+          href='https://github.com/pmongkho/MONDAY-CLONE-REACT-CRUD-ASTRADB'
+          target='_blank'>
+          <div className='project_card'>
+
+            <HoverVideoPlayer
+              style={{ color: 'black', width: '80%' }}
+              videoSrc={project6}
+            />
+            {/* <div className='project-card-info'>
+              <h2>Tetris App</h2>
+              <p>Vanilla JS, HTML, CSS</p>{' '}
+              <p>https://github.com/pmongkho/TETRIS-VANILLAJS</p>
+            </div> */}
+  
           </div>
         </a>
         <div className='projects-icon'> </div>
